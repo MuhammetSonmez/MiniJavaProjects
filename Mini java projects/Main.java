@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {      
-        /*
+        
         DigitValues finder = new DigitValues();
 
         try{
@@ -8,9 +8,9 @@ public class Main {
         }catch(Exception e){
             System.out.println(e);
         }
-        */
+        
 
-        /* 
+        
         Calculator calculate = new Calculator();
         double sumResult = calculate.addition(5, 10, 15, 20);
         System.out.println(sumResult);
@@ -23,40 +23,40 @@ public class Main {
 
         double divideResult =calculate.division(100, 4, 2);
         System.out.println(divideResult);
-        */
         
-        /* 
+        
+        
         WordGuessGame wordGuessGame = new WordGuessGame();
         wordGuessGame.run();
-        */
+        
 
-        /*
+        
         WeatherApp weatherApp = new WeatherApp();
         weatherApp.get_status();
-        */
+        
 
-        /*
+        
         Https https = new Https();
         https.request("https://google.com");
         https.get("https://google.com");
         https.post(null, null);
-        */
+        
 
-        /* 
+        
         WorkingWithFiles process = new WorkingWithFiles();
         process.writing_file("file.txt", "hi !!!");
         process.reading_file("file.txt");
-        */
+        
 
     
-        /* 
+         
         Ransomware ransomware = new Ransomware();
         ransomware.run();
-        */
-        /* 
+        
+        
         ProxyJavaScrapping proxy = new ProxyJavaScrapping();
         proxy.get_proxy("https://api.ipify.org");
-        */
+        
     }
 }
  

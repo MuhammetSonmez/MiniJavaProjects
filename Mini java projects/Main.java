@@ -9,8 +9,6 @@ public class Main {
             System.out.println(e);
         }
         
-
-        
         Calculator calculate = new Calculator();
         double sumResult = calculate.addition(5, 10, 15, 20);
         System.out.println(sumResult);
@@ -56,6 +54,11 @@ public class Main {
         
         ProxyJavaScrapping proxy = new ProxyJavaScrapping();
         proxy.get_proxy("https://api.ipify.org");
+
+        
+        Captcha captcha = new Captcha();
+        boolean auth = captcha.run();
+        System.out.println("auth: " + auth);
         
     }
 }

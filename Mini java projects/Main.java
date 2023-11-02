@@ -23,22 +23,18 @@ public class Main {
         System.out.println(divideResult);
         
         
-        
         WordGuessGame wordGuessGame = new WordGuessGame();
         wordGuessGame.run();
         
 
-        
         WeatherApp weatherApp = new WeatherApp();
         weatherApp.get_status();
         
-
         
         Https https = new Https();
         https.request("https://google.com");
         https.get("https://google.com");
         https.post(null, null);
-        
 
         
         WorkingWithFiles process = new WorkingWithFiles();
@@ -59,6 +55,16 @@ public class Main {
         Captcha captcha = new Captcha();
         boolean auth = captcha.run();
         System.out.println("auth: " + auth);
+
+        
+        PortScanner portScanner = new PortScanner();
+        //portScanner.checkAllPorts(portScanner.nsLookUp("www.example.com"));
+        //portScanner.checkPort(portScanner.nsLookUp("www.example.com"), 445);
+        ArrayList<Integer> pArrayList = portScanner.checkAllPorts("{IP_ADRESS}");
+        System.out.println(pArrayList);
+        for (int p: pArrayList){
+            System.out.println(p);
+        }
         
     }
 }
